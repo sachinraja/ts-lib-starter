@@ -12,7 +12,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "pnpm clean && tsup src/index.ts src/two.ts --format esm,cjs --dts",
+    "build": "pnpm clean && tsup src/index.ts --format esm,cjs --dts",
     "format": "prettier -w .",
     "lint:format": "prettier -c .",
     "lint:types": "tsc",
