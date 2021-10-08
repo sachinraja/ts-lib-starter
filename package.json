@@ -42,7 +42,6 @@
     ]
   },
   "lint-staged": {
-    "*.{js,ts,md,json,yaml}": "prettier -w",
-    "*.{js,ts}": "xo"
+    "*.{js,ts,md,json,yaml}": "prettier -w"
   }
 }
