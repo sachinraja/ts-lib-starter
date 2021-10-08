@@ -44,19 +44,25 @@ Search and replace all instances of `ts-lib-starter` with your package name.
 
 1. [Install pnpm globally.](https://pnpm.io/installation)
 
-2. Copy the repo:
+2. Make a new directory:
+
+```
+mkdir mypackage && cd mypackage
+```
+
+3. Copy the repo:
 
 ```
 pnpx degit sachinraja/ts-lib-starter
 ```
 
-3. Install dependencies:
+4. Install dependencies:
 
 ```
 pnpm i
 ```
 
-4. Lint package:
+5. Lint package:
 
 ```
 pnpm lint
