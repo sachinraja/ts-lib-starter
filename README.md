@@ -28,7 +28,13 @@ Run Prettier checks, TypeScript checks, and xo in parallel.
 
 Run all your checks on each commit.
 
-# Setup
+## pre-commit hook
+
+Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [lint-staged](https://github.com/okonet/lint-staged) to run commands only on changed files.
+
+Ensure all files are formatted before they are committed and run linters on changed files.
+
+# Usage
 
 Install dependencies:
 
@@ -43,3 +49,5 @@ pnpm lint
 ```
 
 Will run all linters in parallel.
+
+Note that there is a workflow in `.github/workflows/test.yml`.
