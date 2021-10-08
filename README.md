@@ -38,6 +38,8 @@ Ensure all files are formatted before they are committed and run linters on chan
 
 Search and replace all `ts-lib-starter` with your package name.
 
+[Install pnpm globally.](https://pnpm.io/installation)
+
 Install dependencies:
 
 ```
@@ -52,4 +54,4 @@ pnpm lint
 
 Will run all linters in parallel.
 
-Note that there is a workflow in `.github/workflows/test.yml`.
+Note that there is a workflow in `.github/workflows/test.yml` that will run on each commit if you push it to GitHub.
