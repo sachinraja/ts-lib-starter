@@ -42,15 +42,21 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 Search and replace all instances of `ts-lib-starter` with your package name.
 
-[Install pnpm globally.](https://pnpm.io/installation)
+1. [Install pnpm globally.](https://pnpm.io/installation)
 
-Install dependencies:
+2. Copy the repo:
+
+```
+pnpx degit sachinraja/ts-lib-starter
+```
+
+3. Install dependencies:
 
 ```
 pnpm i
 ```
 
-Lint package:
+4. Lint package:
 
 ```
 pnpm lint
