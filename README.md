@@ -36,6 +36,8 @@ Ensure all files are formatted before they are committed and run linters on chan
 
 # Usage
 
+Search and replace all `ts-lib-starter` with your package name.
+
 Install dependencies:
 
 ```
