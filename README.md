@@ -34,6 +34,10 @@ Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook 
 
 Ensure all files are formatted before they are committed and run linters on changed files.
 
+## [Renovate](https://docs.renovatebot.com/)
+
+Automatically opens PRs to update dependencies. Automerges patch and minor updates, but not major updates or any `typescript` updates.
+
 # Usage
 
 Search and replace all instances of `ts-lib-starter` with your package name.
