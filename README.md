@@ -80,4 +80,10 @@ pnpm i
 pnpm lint
 ```
 
+7. Test package:
+
+```
+pnpm t
+```
+
 Note that there is a workflow in `.github/workflows/test.yml` that will run on each commit if you push it to GitHub.
