@@ -41,7 +41,7 @@ Ensure all files are formatted before they are committed and run linters on chan
 
 ## [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
 
-Automatically opens PRs to update dependencies. Automerges patch and minor updates, but not major updates or any `typescript` updates.
+Automatically opens PRs to update dependencies. Automerges patch and minor updates, but not major updates or any `typescript` updates. Also pins all `devDependencies`) to use exact versions (**no** `^` before version signifying that the latest patch version can be matched, only the version specified can be used).
 
 # Usage
 
