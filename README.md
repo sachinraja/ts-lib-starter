@@ -14,7 +14,7 @@ A quick, easy-to-use, and zero config bundler powered by esbuild. This allows fo
 
 ## [Jest](https://jestjs.io/)
 
-A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx.
+A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx. Since this uses `--experimental-vm-modules` for esm, you cannot mock modules in the normal way. You can currently use [`jest.unstable_mockModule`](https://github.com/facebook/jest/issues/9430#issuecomment-915109139), but it may change later.
 
 ## [Prettier](https://prettier.io/)
 
