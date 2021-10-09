@@ -42,27 +42,21 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 1. [Install pnpm](https://pnpm.io/installation)
 
-2. Make a new directory:
+2. Copy the repo, replace `mypackage` with your repository name:
 
 ```
-mkdir mypackage && cd mypackage
+pnpx degit sachinraja/ts-lib-starter mypackage
 ```
 
-3. Copy the repo:
+3. Search and replace all instances of `ts-lib-starter` with your package name. Remove `LICENSE` or replace it with your own.
 
-```
-pnpx degit sachinraja/ts-lib-starter
-```
-
-4. Search and replace all instances of `ts-lib-starter` with your package name
-
-5. Install dependencies:
+4. Install dependencies:
 
 ```
 pnpm i
 ```
 
-6. Lint package:
+5. Lint package:
 
 ```
 pnpm lint
