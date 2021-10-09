@@ -22,7 +22,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@swc/core": "1.2.94",
+    "@swc/core": "1.2.95",
     "@swc/jest": "0.2.4",
     "@types/jest": "27.0.2",
     "@types/node": "16.10.3",
