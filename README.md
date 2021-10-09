@@ -40,7 +40,7 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 # Usage
 
-1. [Install pnpm globally.](https://pnpm.io/installation)
+1. [Install pnpm](https://pnpm.io/installation)
 
 2. Make a new directory:
 
@@ -54,7 +54,7 @@ mkdir mypackage && cd mypackage
 pnpx degit sachinraja/ts-lib-starter
 ```
 
-4. Search and replace all instances of `ts-lib-starter` with your package name.
+4. Search and replace all instances of `ts-lib-starter` with your package name
 
 5. Install dependencies:
 
