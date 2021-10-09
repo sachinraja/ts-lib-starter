@@ -62,9 +62,7 @@ instead of `__dirname`. This is necessary as xo will error on non-esm code and J
 3. Copy the repo, replace `mypackage` with your repository name:
 
 ```
-
 pnpx degit sachinraja/ts-lib-starter mypackage && cd mypackage
-
 ```
 
 4. Search and replace all instances of `ts-lib-starter` with your package name. Remove `LICENSE` or replace it with your own.
@@ -72,17 +70,13 @@ pnpx degit sachinraja/ts-lib-starter mypackage && cd mypackage
 5. Install dependencies:
 
 ```
-
 pnpm i
-
 ```
 
 6. Lint package:
 
 ```
-
 pnpm lint
-
 ```
 
 Note that there is a workflow in `.github/workflows/test.yml` that will run on each commit if you push it to GitHub.
