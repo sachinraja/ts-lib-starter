@@ -34,7 +34,7 @@ Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook 
 
 Ensure all files are formatted before they are committed and run linters on changed files.
 
-## [Renovate](https://docs.renovatebot.com/)
+## [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
 
 Automatically opens PRs to update dependencies. Automerges patch and minor updates, but not major updates or any `typescript` updates.
 
@@ -42,21 +42,23 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 1. [Install pnpm](https://pnpm.io/installation)
 
-2. Copy the repo, replace `mypackage` with your repository name:
+2. [Grant Renovate access to your GitHub repos](https://github.com/marketplace/renovate)
+
+3. Copy the repo, replace `mypackage` with your repository name:
 
 ```
 pnpx degit sachinraja/ts-lib-starter mypackage && cd mypackage
 ```
 
-3. Search and replace all instances of `ts-lib-starter` with your package name. Remove `LICENSE` or replace it with your own.
+4. Search and replace all instances of `ts-lib-starter` with your package name. Remove `LICENSE` or replace it with your own.
 
-4. Install dependencies:
+5. Install dependencies:
 
 ```
 pnpm i
 ```
 
-5. Lint package:
+6. Lint package:
 
 ```
 pnpm lint
