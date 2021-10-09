@@ -14,7 +14,7 @@ A quick, easy-to-use, and zero config bundler powered by esbuild. This allows fo
 
 ## [Jest](https://jestjs.io/)
 
-A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx. Note that this
+A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx.
 
 ## [Prettier](https://prettier.io/)
 
@@ -34,7 +34,8 @@ Run all your checks on each commit.
 
 ## pre-commit hook
 
-Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [lint-staged](https://github.com/okonet/lint-staged) to run commands only on changed files.
+Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [lint-staged](https://github.com/okonet/lint-staged) to run commands only on cpnpm i
+hanged files.
 
 Ensure all files are formatted before they are committed and run linters on changed files.
 
