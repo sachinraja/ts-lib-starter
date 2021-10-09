@@ -1,13 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@swc/core': ^1.2.94
-  '@swc/jest': ^0.2.4
+  '@swc/core': 1.2.94
+  '@swc/jest': 0.2.4
   '@types/jest': 27.0.2
   '@types/node': 16.10.3
   eslint-config-prettier: 8.3.0
   husky: 7.0.2
-  jest: ^27.2.5
+  jest: 27.2.5
   lint-staged: 11.2.0
   npm-run-all: 4.1.5
   prettier: 2.4.1
