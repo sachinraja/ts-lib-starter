@@ -45,7 +45,7 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 2. Copy the repo, replace `mypackage` with your repository name:
 
 ```
-pnpx degit sachinraja/ts-lib-starter mypackage
+pnpx degit sachinraja/ts-lib-starter mypackage && cd mypackage
 ```
 
 3. Search and replace all instances of `ts-lib-starter` with your package name. Remove `LICENSE` or replace it with your own.
