@@ -12,6 +12,10 @@ A fast and efficient package manager. Packages are linked from a single, global 
 
 A quick, easy-to-use, and zero config bundler powered by esbuild. This allows for dual publishing esmodules and commonjs. It also produces only one dts file for each entrypoint.
 
+## [Jest](https://jestjs.io/)
+
+A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx.
+
 ## [Prettier](https://prettier.io/)
 
 An opinionated code formatter that supports many languages.
