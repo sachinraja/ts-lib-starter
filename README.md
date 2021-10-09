@@ -40,8 +40,6 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 # Usage
 
-Search and replace all instances of `ts-lib-starter` with your package name.
-
 1. [Install pnpm globally.](https://pnpm.io/installation)
 
 2. Make a new directory:
@@ -56,18 +54,18 @@ mkdir mypackage && cd mypackage
 pnpx degit sachinraja/ts-lib-starter
 ```
 
-4. Install dependencies:
+4. Search and replace all instances of `ts-lib-starter` with your package name.
+
+5. Install dependencies:
 
 ```
 pnpm i
 ```
 
-5. Lint package:
+6. Lint package:
 
 ```
 pnpm lint
 ```
-
-Will run all linters in parallel.
 
 Note that there is a workflow in `.github/workflows/test.yml` that will run on each commit if you push it to GitHub.
