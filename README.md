@@ -14,7 +14,7 @@ A quick, easy-to-use, and zero config bundler powered by esbuild. This allows fo
 
 ## [Jest](https://jestjs.io/)
 
-A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx.
+A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx. Note that this
 
 ## [Prettier](https://prettier.io/)
 
@@ -44,6 +44,17 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 # Usage
 
+This is esm-first, meaning you write esm and it is transpiled to both esm and cjs. For example, use:
+
+```ts
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+```
+
+instead of `__dirname`. This is necessary as xo will error on non-esm code and Jest uses the `--experimental-vm-modules` flag, so nothing from cjs will be defined.
+
 1. [Install pnpm](https://pnpm.io/installation)
 
 2. [Grant Renovate access to your GitHub repos](https://github.com/marketplace/renovate)
@@ -51,7 +62,9 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 3. Copy the repo, replace `mypackage` with your repository name:
 
 ```
+
 pnpx degit sachinraja/ts-lib-starter mypackage && cd mypackage
+
 ```
 
 4. Search and replace all instances of `ts-lib-starter` with your package name. Remove `LICENSE` or replace it with your own.
@@ -59,13 +72,17 @@ pnpx degit sachinraja/ts-lib-starter mypackage && cd mypackage
 5. Install dependencies:
 
 ```
+
 pnpm i
+
 ```
 
 6. Lint package:
 
 ```
+
 pnpm lint
+
 ```
 
 Note that there is a workflow in `.github/workflows/test.yml` that will run on each commit if you push it to GitHub.

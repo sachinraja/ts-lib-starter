@@ -9,12 +9,10 @@ const jestConfig = {
             syntax: 'typescript',
           },
         },
-        module: {
-          type: 'commonjs',
-        },
       },
     ],
   },
+  extensionsToTreatAsEsm: ['.ts'],
 }
 
 export default jestConfig
