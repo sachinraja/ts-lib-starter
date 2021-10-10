@@ -102,10 +102,13 @@ An entry point is a path that modules from your package can be imported from. Th
 
 If you want to add an entrypoint, you must do the following:
 
-1. Specify the path you want to users to import your module from. For this example, I will use the file `src/constants.ts` and expose the entry point as `ts-lib-starter/constants`. Modify the following in `package.json.exports`:
+1. Specify the path you want to users to import your module from. For this example, I will use the file `src/constants.ts` and expose the entry point as `ts-lib-starter/constants`. Add the following in `package.json.exports`:
 
 ```json
 "exports": {
+    ".": {
+        // ...
+    },
     "./constants": {
         "import": "./dist/constants.js",
         "default": "./dist/constants.cjs",
@@ -118,9 +121,10 @@ This exposes the module to users in multiple formats. `import` is used when a us
 
 2. Add the file to the `tsup` build in `package.json.scripts.build`:
 
-```
+```diff
 "scripts": {
-    "build": "tsup src/index.ts src/constants.ts --format esm,cjs --dts-resolve --splitting"
+-     "build": "tsup src/index.ts --format esm,cjs --dts-resolve --splitting"
++     "build": "tsup src/index.ts src/constants.ts --format esm,cjs --dts-resolve --splitting"
 }
 ```
 
