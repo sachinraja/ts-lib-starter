@@ -9,7 +9,8 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "noEmit": true,
+    "isolatedModules": true
   },
   "include": ["src", "test"],
   "exclude": ["node_modules", "dist"]
