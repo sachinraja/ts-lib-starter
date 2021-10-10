@@ -3,13 +3,16 @@
   "version": "0.0.0",
   "description": "boilerplate for your next TypeScript library",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
       "default": "./dist/index.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "build": "pnpm clean && tsup src/index.ts --format esm,cjs --dts",
@@ -19,7 +22,8 @@
     "lint:xo": "xo",
     "lint": "run-p lint:*",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
     "@swc/core": "1.2.95",
