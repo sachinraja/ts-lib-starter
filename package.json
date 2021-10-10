@@ -4,10 +4,12 @@
   "description": "boilerplate for your next TypeScript library",
   "type": "module",
   "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "default": "./dist/index.cjs"
+      "default": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
