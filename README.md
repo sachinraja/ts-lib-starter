@@ -95,3 +95,35 @@ Note that there is a workflow in `.github/workflows/test.yml` that will run on e
 Run `pnpm publish` to publish the package. Make sure the version is what you want to publish before publishing. Building the package (in a `prepublishOnly` script) and setting the relevant `package.json` attributes are already done. Note that [`sideEffects`](https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free) is set to `false`, so bundlers like Webpack can tree shake the package:
 
 > A "side effect" is defined as code that performs a special behavior when imported, other than exposing one or more exports. An example of this are polyfills, which affect the global scope and usually do not provide an export.
+
+## Entry Points
+
+An entry point is a path that modules from your package can be imported from. The default entry point for this starter is `.`, which simply means that `src/index.ts` can be imported as `ts-lib-starter` (your package name).
+
+If you want to add an entrypoint, you must do the following:
+
+1. Specify the path you want to users to import your module from. For this example, I will use the file `src/constants.ts` and expose the entry point as `ts-lib-starter/constants`. Modify the following in `package.json.exports`:
+
+```json
+"exports": {
+    "./constants": {
+        "import": "./dist/constants.js",
+        "default": "./dist/constants.cjs",
+        "types": "./dist/constants.d.ts",
+    }
+}
+```
+
+This exposes the module to users in multiple formats. `import` is used when a user uses an esm import for the entry point. `default` is used in any other case (i.e. a cjs `require`). `types` tells TypeScript where to find the types for that entry point.
+
+2. Add the file to the `tsup` build in `package.json.scripts.build`:
+
+```
+"scripts": {
+    "build": "tsup src/index.ts src/constants.ts --format esm,cjs --dts-resolve --splitting"
+}
+```
+
+Note the flags here. `--format` specifies for the package to be bundled in both esm and cjs, which allows for a dual publish. `--dts-resolve` is used to bundle types for `devDependencies`. For example, if you use a TypeScript utilities package, such as [`ts-essentials`](https://github.com/krzkaczor/ts-essentials), the types will be bundled (in the `.d.ts` files) to avoid a dependency on `ts-essentials`. `--splitting` enables an experimental feature that allows for creating chunks with cjs. This helps to avoid duplicating code with a package with multiple entry points.
+
+The first arguments (`src/index.ts` and `src/constants.ts`) specify the files that are our entry points, so when you add an entry point, it must also be added to the `build` script like so.
