@@ -104,7 +104,7 @@ If you want to add an entrypoint, you must do the following:
 
 1. Specify the path you want to users to import your module from. For this example, I will use the file `src/constants.ts` and expose the entry point as `ts-lib-starter/constants`. Add the following in `package.json.exports`:
 
-```json
+```jsonc
 "exports": {
     ".": {
         // ...
