@@ -13,6 +13,7 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
     "clean": "rimraf dist",
     "build": "pnpm clean && tsup src/index.ts --format esm,cjs --dts",

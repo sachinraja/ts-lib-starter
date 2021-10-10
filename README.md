@@ -56,6 +56,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 instead of `__dirname`. This is necessary as xo will error on non-esm code and Jest uses the `--experimental-vm-modules` flag, so nothing from cjs will be defined.
 
+## Setup
+
 1. [Install pnpm](https://pnpm.io/installation)
 
 2. [Grant Renovate access to your GitHub repos](https://github.com/marketplace/renovate)
@@ -87,3 +89,9 @@ pnpm t
 ```
 
 Note that there is a workflow in `.github/workflows/test.yml` that will run on each commit if you push it to GitHub.
+
+## Publishing
+
+Run `pnpm publish` to publish the package. Make sure the version is what you want to publish before publishing. Building the package (in a `prepublishOnly` script) and setting the relevant `package.json` attributes are already done. Note that [`sideEffects`](https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free) is set to `false`, so bundlers like Webpack can tree shake the package:
+
+> A "side effect" is defined as code that performs a special behavior when imported, other than exposing one or more exports. An example of this are polyfills, which affect the global scope and usually do not provide an export.
