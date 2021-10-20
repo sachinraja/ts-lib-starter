@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@swc/core": "1.2.101",
-    "@swc/jest": "0.2.4",
+    "@swc/jest": "0.2.5",
     "@types/jest": "27.0.2",
     "@types/node": "16.10.3",
     "eslint-config-prettier": "8.3.0",
