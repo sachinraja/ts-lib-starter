@@ -11,6 +11,7 @@ specifiers:
   lint-staged: 11.2.6
   npm-run-all: 4.1.5
   prettier: 2.4.1
+  regenerator-runtime: 0.13.9
   rimraf: 3.0.2
   tsup: 5.5.0
   typescript: 4.4.4
@@ -27,6 +28,7 @@ devDependencies:
   lint-staged: 11.2.6
   npm-run-all: 4.1.5
   prettier: 2.4.1
+  regenerator-runtime: 0.13.9
   rimraf: 3.0.2
   tsup: 5.5.0_typescript@4.4.4
   typescript: 4.4.4
@@ -4543,6 +4545,10 @@ packages:
     dependencies:
       indent-string: 5.0.0
       strip-indent: 4.0.0
+    dev: true
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
     dev: true
 
   /regexp-tree/0.1.24:
