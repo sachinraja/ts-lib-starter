@@ -11,6 +11,7 @@ specifiers:
   lint-staged: 11.2.6
   npm-run-all: 4.1.5
   prettier: 2.4.1
+  prettier-plugin-pkg: 0.10.0
   regenerator-runtime: 0.13.9
   rimraf: 3.0.2
   tsup: 5.5.0
@@ -28,6 +29,7 @@ devDependencies:
   lint-staged: 11.2.6
   npm-run-all: 4.1.5
   prettier: 2.4.1
+  prettier-plugin-pkg: 0.10.0_prettier@2.4.1
   regenerator-runtime: 0.13.9
   rimraf: 3.0.2
   tsup: 5.5.0_typescript@4.4.4
@@ -4417,6 +4419,14 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       fast-diff: 1.2.0
+    dev: true
+
+  /prettier-plugin-pkg/0.10.0_prettier@2.4.1:
+    resolution: {integrity: sha512-NvqkGTfAdB9Bu7txMaePQTieVAo4mvBGkWsdtOego5WwJT3cu6mLlYDBe/FEQ9gcW6+vjYiBwkP0qs3lBIZbfw==}
+    peerDependencies:
+      prettier: ^2.0.5
+    dependencies:
+      prettier: 2.4.1
     dev: true
 
   /prettier/2.4.1:

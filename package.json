@@ -1,10 +1,9 @@
 {
   "name": "ts-lib-starter",
   "version": "0.0.0",
-  "description": "boilerplate for your next TypeScript library",
   "type": "module",
+  "description": "boilerplate for your next TypeScript library",
   "main": "dist/index.cjs",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -12,21 +11,21 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
-    "clean": "rimraf dist",
     "build": "pnpm clean && tsup src/index.ts --format esm,cjs --dts-resolve --splitting",
+    "clean": "rimraf dist",
     "format": "prettier -w .",
+    "lint": "run-p lint:*",
     "lint:format": "prettier -c .",
     "lint:types": "tsc",
     "lint:xo": "xo",
-    "lint": "run-p lint:*",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "prepare": "husky install",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
     "@swc/core": "1.2.106",
@@ -39,22 +38,27 @@
     "lint-staged": "11.2.6",
     "npm-run-all": "4.1.5",
     "prettier": "2.4.1",
+    "prettier-plugin-pkg": "0.10.0",
     "regenerator-runtime": "0.13.9",
     "rimraf": "3.0.2",
     "tsup": "5.5.0",
     "typescript": "4.4.4",
     "xo": "0.46.3"
   },
+  "sideEffects": false,
+  "lint-staged": {
+    "*.{js,ts,md,json,yaml}": "prettier -w"
+  },
   "prettier": {
     "semi": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "plugins": [
+      "./node_modules/prettier-plugin-pkg"
+    ]
   },
   "xo": {
     "extends": [
       "prettier"
     ]
-  },
-  "lint-staged": {
-    "*.{js,ts,md,json,yaml}": "prettier -w"
   }
 }
