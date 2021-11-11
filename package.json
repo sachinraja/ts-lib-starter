@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm clean && tsup src/index.ts --format esm,cjs --dts-resolve --splitting",
+    "build": "pnpm clean && tsup",
     "clean": "rimraf dist",
     "format": "prettier -w .",
     "lint": "run-p lint:*",
@@ -55,6 +55,19 @@
     "plugins": [
       "./node_modules/prettier-plugin-pkg"
     ]
+  },
+  "tsup": {
+    "entryPoints": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": {
+      "resolve": true
+    },
+    "splitting": true
   },
   "xo": {
     "extends": [

@@ -102,7 +102,7 @@ An entry point is a path that modules from your package can be imported from. Th
 
 If you want to add an entrypoint, you must do the following:
 
-1. Specify the path you want to users to import your module from. For this example, I will use the file `src/constants.ts` and expose the entry point as `ts-lib-starter/constants`. Add the following in `package.json.exports`:
+1. Specify the path you want to users to import your module from. For this example, I will use the file `src/constants.ts` and expose the entry point as `ts-lib-starter/constants`. Add the following in `package.json` exports:
 
 ```jsonc
 "exports": {
@@ -119,15 +119,27 @@ If you want to add an entrypoint, you must do the following:
 
 This exposes the module to users in multiple formats. `import` is used when a user uses an esm import for the entry point. `default` is used in any other case (i.e. a cjs `require`). `types` tells TypeScript where to find the types for that entry point.
 
-2. Add the file to the `tsup` build in `package.json.scripts.build`:
+2. Add the file to the `tsup` build in the `package.json` config:
 
 ```diff
-"scripts": {
--     "build": "tsup src/index.ts --format esm,cjs --dts-resolve --splitting"
-+     "build": "tsup src/index.ts src/constants.ts --format esm,cjs --dts-resolve --splitting"
+{
+  "tsup": {
+    "entryPoints": [
+      "src/index.ts",
++     "src/constants.ts"
+    ]
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": {
+      "resolve": true
+    },
+    "splitting": true
+  }
 }
 ```
 
-Note the flags here. `--format` specifies for the package to be bundled in both esm and cjs, which allows for a dual publish. `--dts-resolve` is used to bundle types for `devDependencies`. For example, if you use a TypeScript utilities package, such as [`ts-essentials`](https://github.com/krzkaczor/ts-essentials), the types will be bundled (in the `.d.ts` files) to avoid a dependency on `ts-essentials`. `--splitting` enables an experimental feature that allows for creating chunks with cjs. This helps to avoid duplicating code with a package with multiple entry points.
+Note the options here. `format` specifies for the package to be bundled in both esm and cjs, which allows for a dual publish. `dts.resolve` is used to bundle types for `devDependencies`. For example, if you use a TypeScript utilities package, such as [`ts-essentials`](https://github.com/krzkaczor/ts-essentials), the types will be bundled (in the `.d.ts` files) to avoid a dependency on `ts-essentials`. `splitting` enables an experimental feature that allows for creating chunks with cjs. This helps to avoid duplicating code with a package with multiple entry points.
 
-The first arguments (`src/index.ts` and `src/constants.ts`) specify the files that are our entry points, so when you add an entry point, it must also be added to the `build` script like so.
+The `entryPoints` (`src/index.ts` and `src/constants.ts`), specify the files that are our entry points, so when you add an entry point, it must also be added to the `build` config like before.
