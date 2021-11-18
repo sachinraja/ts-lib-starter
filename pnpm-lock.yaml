@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@swc/core': 1.2.110
   '@swc/jest': 0.2.5
-  '@types/jest': 27.0.2
+  '@types/jest': 27.0.3
   '@types/node': 16.11.8
   eslint-config-prettier: 8.3.0
   husky: 7.0.4
@@ -21,7 +21,7 @@ specifiers:
 devDependencies:
   '@swc/core': 1.2.110
   '@swc/jest': 0.2.5_@swc+core@1.2.110
-  '@types/jest': 27.0.2
+  '@types/jest': 27.0.3
   '@types/node': 16.11.8
   eslint-config-prettier: 8.3.0
   husky: 7.0.4
@@ -878,11 +878,11 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/27.0.2:
-    resolution: {integrity: sha512-4dRxkS/AFX0c5XW6IPMNOydLn2tEhNhJV7DnYK+0bjoJZ+QTmfucBlihX7aoEsh/ocYtkLC73UbnBXBXIxsULA==}
+  /@types/jest/27.0.3:
+    resolution: {integrity: sha512-cmmwv9t7gBYt7hNKH5Spu7Kuu/DotGa+Ff+JGRKZ4db5eh8PnKS4LuebJ3YLUoyOyIHraTGyULn23YtEAm0VSg==}
     dependencies:
-      jest-diff: 27.2.5
-      pretty-format: 27.2.5
+      jest-diff: 27.3.1
+      pretty-format: 27.3.1
     dev: true
 
   /@types/json-schema/7.0.9:
@@ -3220,16 +3220,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jest-diff/27.2.5:
-    resolution: {integrity: sha512-7gfwwyYkeslOOVQY4tVq5TaQa92mWfC9COsVYMNVYyJTOYAqbIkoD3twi5A+h+tAPtAelRxkqY6/xu+jwTr0dA==}
-    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
-    dependencies:
-      chalk: 4.1.2
-      diff-sequences: 27.0.6
-      jest-get-type: 27.0.6
-      pretty-format: 27.2.5
-    dev: true
-
   /jest-diff/27.3.1:
     resolution: {integrity: sha512-PCeuAH4AWUo2O5+ksW4pL9v5xJAcIKPUPfIhZBcG1RKv/0+dvaWTQK1Nrau8d67dp65fOqbeMdoil+6PedyEPQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -3286,11 +3276,6 @@ packages:
       '@types/node': 16.11.8
       jest-mock: 27.3.0
       jest-util: 27.3.1
-    dev: true
-
-  /jest-get-type/27.0.6:
-    resolution: {integrity: sha512-XTkK5exIeUbbveehcSR8w0bhH+c0yloW/Wpl+9vZrjzztCPWrxhHwkIFpZzCt71oRBsgxmuUfxEqOYoZI2macg==}
-    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dev: true
 
   /jest-get-type/27.3.1:
@@ -4433,16 +4418,6 @@ packages:
     resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: true
-
-  /pretty-format/27.2.5:
-    resolution: {integrity: sha512-+nYn2z9GgicO9JiqmY25Xtq8SYfZ/5VCpEU3pppHHNAhd1y+ZXxmNPd1evmNcAd6Hz4iBV2kf0UpGth5A/VJ7g==}
-    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
-    dependencies:
-      '@jest/types': 27.2.5
-      ansi-regex: 5.0.1
-      ansi-styles: 5.2.0
-      react-is: 17.0.2
     dev: true
 
   /pretty-format/27.3.1:
