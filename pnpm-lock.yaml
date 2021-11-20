@@ -14,7 +14,7 @@ specifiers:
   prettier-plugin-pkg: 0.11.0
   regenerator-runtime: 0.13.9
   rimraf: 3.0.2
-  tsup: 5.7.3
+  tsup: 5.7.4
   typescript: 4.4.4
   xo: 0.46.4
 
@@ -32,7 +32,7 @@ devDependencies:
   prettier-plugin-pkg: 0.11.0_prettier@2.4.1
   regenerator-runtime: 0.13.9
   rimraf: 3.0.2
-  tsup: 5.7.3_typescript@4.4.4
+  tsup: 5.7.4_typescript@4.4.4
   typescript: 4.4.4
   xo: 0.46.4
 
@@ -5046,8 +5046,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tsup/5.7.3_typescript@4.4.4:
-    resolution: {integrity: sha512-vdcxyJ/yEOp0CM2GH1toh6n6Tc0QAShHar2FwOMszJgsRWwc9BnI92XwMB52Fz9Y/W5JRFFgtVs+gR+VTOFLtA==}
+  /tsup/5.7.4_typescript@4.4.4:
+    resolution: {integrity: sha512-vASi5l+P3ZvQRKmtIH5PrR8165/dOYyuynBwllPGMSAL2hd1TnEjwrOexguCr87uQ+UpXlhhdVvygaYdVyQc7w==}
     hasBin: true
     peerDependencies:
       typescript: ^4.2.3
