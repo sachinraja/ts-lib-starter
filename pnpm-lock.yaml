@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@swc/core': 1.2.111
-  '@swc/jest': 0.2.5
+  '@swc/jest': 0.2.8
   '@types/jest': 27.0.3
   '@types/node': 16.11.9
   eslint-config-prettier: 8.3.0
@@ -20,7 +20,7 @@ specifiers:
 
 devDependencies:
   '@swc/core': 1.2.111
-  '@swc/jest': 0.2.5_@swc+core@1.2.111
+  '@swc/jest': 0.2.8_@swc+core@1.2.111
   '@types/jest': 27.0.3
   '@types/node': 16.11.9
   eslint-config-prettier: 8.3.0
@@ -498,6 +498,13 @@ packages:
       - utf-8-validate
     dev: true
 
+  /@jest/create-cache-key-function/27.3.1:
+    resolution: {integrity: sha512-21lx0HRgkznc5Tc2WGiXVYQQ6Vdfohs6CkLV2FLogLRb52f6v9SiSIjTNflu23lzEmY4EalLgQLxCfhgvREV6w==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@jest/types': 27.2.5
+    dev: true
+
   /@jest/environment/27.3.1:
     resolution: {integrity: sha512-BCKCj4mOVLme6Tanoyc9k0ultp3pnmuyHw73UHRPeeZxirsU/7E3HC4le/VDb/SMzE1JcPnto+XBKFOcoiJzVw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -803,11 +810,12 @@ packages:
       '@swc/core-win32-x64-msvc': 1.2.111
     dev: true
 
-  /@swc/jest/0.2.5_@swc+core@1.2.111:
-    resolution: {integrity: sha512-7Vb+RXuXWk47QbOPJ3hwSIMCwUVylp7JUhUITVtMe3hMoBv0IMfVCML9p6jiRhoBAzjzYDPPteKoVxSUJjFNPA==}
+  /@swc/jest/0.2.8_@swc+core@1.2.111:
+    resolution: {integrity: sha512-AVsJkheqE2+Rl/nvU4Sfawp0EvqMhlAm0R5HY9WQYIS1Axg0sHZZMRXWQfEc4UlUhVB6beDW8CkramSyBj5eCQ==}
     peerDependencies:
       '@swc/core': '*'
     dependencies:
+      '@jest/create-cache-key-function': 27.3.1
       '@swc/core': 1.2.111
     dev: true
 
