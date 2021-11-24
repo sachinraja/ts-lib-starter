@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@swc/core': 1.2.112
-  '@swc/jest': 0.2.8
+  '@swc/jest': 0.2.9
   '@types/jest': 27.0.3
   '@types/node': 16.11.10
   eslint-config-prettier: 8.3.0
@@ -20,7 +20,7 @@ specifiers:
 
 devDependencies:
   '@swc/core': 1.2.112
-  '@swc/jest': 0.2.8_@swc+core@1.2.112
+  '@swc/jest': 0.2.9_@swc+core@1.2.112
   '@types/jest': 27.0.3
   '@types/node': 16.11.10
   eslint-config-prettier: 8.3.0
@@ -810,8 +810,8 @@ packages:
       '@swc/core-win32-x64-msvc': 1.2.112
     dev: true
 
-  /@swc/jest/0.2.8_@swc+core@1.2.112:
-    resolution: {integrity: sha512-AVsJkheqE2+Rl/nvU4Sfawp0EvqMhlAm0R5HY9WQYIS1Axg0sHZZMRXWQfEc4UlUhVB6beDW8CkramSyBj5eCQ==}
+  /@swc/jest/0.2.9_@swc+core@1.2.112:
+    resolution: {integrity: sha512-SeAAQY83NNmgAQSIv3AANs4mMYbUeueHVTczrvHk+jlpIVmzrVZrkV0PAJ1rAvg9KBHjdnEmuTYYBKEUSCl9DA==}
     peerDependencies:
       '@swc/core': '*'
     dependencies:
