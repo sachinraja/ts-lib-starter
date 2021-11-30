@@ -1,13 +1,3 @@
 {
-  extends: ['config:js-lib'],
-  packageRules: [
-    {
-      matchUpdateTypes: ['minor', 'patch', 'pin', 'digest'],
-      automerge: true,
-    },
-    {
-      matchPackageNames: ['typescript'],
-      automerge: false,
-    },
-  ],
+  extends: ['config:js-lib', 'github>sachinraja/renovate-config:js'],
 }
