@@ -111,13 +111,12 @@ If you want to add an entrypoint, you must do the following:
     },
     "./constants": {
         "import": "./dist/constants.js",
-        "default": "./dist/constants.cjs",
-        "types": "./dist/constants.d.ts",
+        "default": "./dist/constants.cjs"
     }
 }
 ```
 
-This exposes the module to users in multiple formats. `import` is used when a user uses an esm import for the entry point. `default` is used in any other case (i.e. a cjs `require`). `types` tells TypeScript where to find the types for that entry point.
+This exposes the module to users in multiple formats. `import` is used when a user uses an esm import for the entry point. `default` is used in any other case (i.e. a cjs `require`).
 
 2. Add the file to the `tsup` build in the `package.json` config:
 
