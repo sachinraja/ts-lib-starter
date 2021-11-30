@@ -28,7 +28,7 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
-    "@swc/core": "1.2.113",
+    "@swc/core": "1.2.114",
     "@swc/jest": "0.2.11",
     "@types/jest": "27.0.3",
     "@types/node": "16.11.10",
