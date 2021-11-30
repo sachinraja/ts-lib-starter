@@ -5,10 +5,10 @@
   "description": "boilerplate for your next TypeScript library",
   "main": "dist/index.cjs",
   "exports": {
+    "./package.json": "./package.json",
     ".": {
       "import": "./dist/index.js",
-      "default": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "default": "./dist/index.cjs"
     }
   },
   "types": "dist/index.d.ts",
