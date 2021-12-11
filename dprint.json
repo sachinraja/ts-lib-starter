@@ -1,0 +1,15 @@
+{
+  "incremental": true,
+  "indentWidth": 2,
+  "typescript": {
+    "quoteStyle": "preferSingle",
+    "semiColons": "asi"
+  },
+  "includes": ["**/*.{ts,tsx,js,jsx,cjs,mjs,json,md}"],
+  "excludes": ["**/node_modules", "pnpm-lock.yaml"],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.60.0.wasm",
+    "https://plugins.dprint.dev/json-0.13.2.wasm",
+    "https://plugins.dprint.dev/markdown-0.11.3.wasm"
+  ]
+}

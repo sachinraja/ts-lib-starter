@@ -16,9 +16,9 @@ A quick, easy-to-use, and zero config bundler powered by esbuild. This allows fo
 
 A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx. Since this uses `--experimental-vm-modules` for esm, you cannot mock modules in the normal way. You can currently use [`jest.unstable_mockModule`](https://github.com/facebook/jest/issues/9430#issuecomment-915109139), but it may change later.
 
-### [Prettier](https://prettier.io/)
+### [dprint](https://dprint.dev/)
 
-An opinionated code formatter that supports many languages.
+A pluggable and configurable code formatting platform written in Rust. Faster alternative to Prettier.
 
 ### [xo](https://github.com/xojs/xo)
 
@@ -26,7 +26,7 @@ An opinionated ESLint wrapper that "just works."
 
 ### [npm-run-all](https://github.com/mysticatea/npm-run-all)
 
-Run Prettier checks, TypeScript checks, and xo in parallel.
+Run dprint checks, TypeScript checks, and xo in parallel.
 
 ### [Github Actions](https://github.com/features/actions)
 

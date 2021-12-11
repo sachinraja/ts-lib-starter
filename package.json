@@ -18,9 +18,9 @@
   "scripts": {
     "build": "pnpm clean && tsup",
     "clean": "rimraf dist",
-    "format": "prettier -w .",
+    "format": "dprint fmt",
     "lint": "run-p lint:*",
-    "lint:format": "prettier -c .",
+    "lint:format": "dprint check",
     "lint:types": "tsc",
     "lint:xo": "xo",
     "prepare": "husky install",
@@ -32,13 +32,12 @@
     "@swc/jest": "0.2.12",
     "@types/jest": "27.0.3",
     "@types/node": "16.11.12",
+    "dprint": "0.19.1",
     "eslint-config-prettier": "8.3.0",
     "husky": "7.0.4",
     "jest": "27.4.4",
     "lint-staged": "12.1.2",
     "npm-run-all": "4.1.5",
-    "prettier": "2.5.1",
-    "prettier-plugin-pkg": "0.11.1",
     "regenerator-runtime": "0.13.9",
     "rimraf": "3.0.2",
     "tsup": "5.11.1",
@@ -47,14 +46,7 @@
   },
   "sideEffects": false,
   "lint-staged": {
-    "*.{js,ts,md,json,yaml}": "prettier -w"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "plugins": [
-      "./node_modules/prettier-plugin-pkg"
-    ]
+    "*.{js,ts,md,json,yaml}": "dprint fmt"
   },
   "tsup": {
     "entryPoints": [
