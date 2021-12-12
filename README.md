@@ -20,9 +20,9 @@ A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, loo
 
 A pluggable and configurable code formatting platform written in Rust. Faster alternative to Prettier.
 
-### [xo](https://github.com/xojs/xo)
+### [ESLint](https://eslint.org/) and [TypeScript ESLint](https://typescript-eslint.io/)
 
-An opinionated ESLint wrapper that "just works."
+Linter that helps you find problems in your code.
 
 ### [npm-run-all](https://github.com/mysticatea/npm-run-all)
 
@@ -53,7 +53,7 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 ```
 
-instead of `__dirname`. This is necessary as xo will error on non-esm code and Jest uses the `--experimental-vm-modules` flag, so nothing from cjs will be defined.
+instead of `__dirname`.
 
 ### Setup
 
