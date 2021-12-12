@@ -26,7 +26,7 @@ Linter that helps you find problems in your code.
 
 ### [npm-run-all](https://github.com/mysticatea/npm-run-all)
 
-Run dprint checks, TypeScript checks, and xo in parallel.
+Run dprint, TypeScript, and ESLint checks in parallel.
 
 ### [Github Actions](https://github.com/features/actions)
 
