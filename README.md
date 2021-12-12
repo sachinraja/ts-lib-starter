@@ -10,11 +10,11 @@ A fast and efficient package manager. Packages are linked from a single, global 
 
 ### [tsup](https://tsup.egoist.sh/)
 
-A quick, easy-to-use, and zero config bundler powered by esbuild. This allows for dual publishing esmodules and commonjs. It also produces only one dts file for each entrypoint.
+A quick, easy-to-use, and zero config bundler powered by esbuild. This allows for dual publishing esm and cjs . It also produces only one type definition file for each entrypoint.
 
-### [Jest](https://jestjs.io/)
+### [vitest](https://vitest.dev/)
 
-A testing framework. Uses [swc](https://swc.rs/) for transpiling TypeScript, look through the swc docs if you need to add features to the transpiler such as jsx. Since this uses `--experimental-vm-modules` for esm, you cannot mock modules in the normal way. You can currently use [`jest.unstable_mockModule`](https://github.com/facebook/jest/issues/9430#issuecomment-915109139), but it may change later.
+A testing framework. Uses [Vite](https://vitejs.dev/) for building your code, so look through the Vite docs if you need to add plugins.
 
 ### [dprint](https://dprint.dev/)
 
@@ -53,7 +53,7 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 ```
 
-instead of `__dirname`. This is necessary as xo will error on non-esm code and Jest uses the `--experimental-vm-modules` flag, so nothing from cjs will be defined.
+instead of `__dirname`. This is necessary as xo will error on non-esm code and tests run in an esm context.
 
 ### Setup
 
