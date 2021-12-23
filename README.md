@@ -44,7 +44,7 @@ Automatically opens PRs to update dependencies. Automerges patch and minor updat
 
 ## Usage
 
-This is esm-first, meaning you write esm and it is transpiled to both esm and cjs. For example, use:
+This is esm-first, meaning you should write esm and it is transpiled to both esm and cjs. For example, use:
 
 ```ts
 import path from 'path'
