@@ -38,8 +38,8 @@
     "nano-staged": "0.5.0",
     "npm-run-all": "4.1.5",
     "rimraf": "3.0.2",
-    "vite": "2.7.1",
-    "vitest": "0.0.61",
+    "vite": "2.7.6",
+    "vitest": "0.0.108",
     "tsup": "5.11.7",
     "typescript": "4.5.4"
   },
