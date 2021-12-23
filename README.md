@@ -20,13 +20,13 @@ A testing framework. Uses [Vite](https://vitejs.dev/) for building your code, so
 
 A pluggable and configurable code formatting platform written in Rust. Faster alternative to Prettier.
 
-### [xo](https://github.com/xojs/xo)
+### [ESLint](https://eslint.org/) and [TypeScript ESLint](https://typescript-eslint.io/)
 
-An opinionated ESLint wrapper that "just works."
+Linter that helps you find problems in your code.
 
 ### [npm-run-all](https://github.com/mysticatea/npm-run-all)
 
-Run dprint checks, TypeScript checks, and xo in parallel.
+Run dprint, TypeScript, and ESLint checks in parallel.
 
 ### [Github Actions](https://github.com/features/actions)
 
@@ -34,7 +34,7 @@ Run all your checks on each commit.
 
 ### pre-commit hook
 
-Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [lint-staged](https://github.com/okonet/lint-staged) to run commands only on changed files.
+Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [nano-staged](https://github.com/usmanyunusov/nano-staged) (lint-staged alternative) to run commands only on changed files.
 
 Ensure all files are formatted before they are committed and run linters on changed files.
 
@@ -53,7 +53,7 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 ```
 
-instead of `__dirname`. This is necessary as xo will error on non-esm code and tests run in an esm context.
+instead of `__dirname`.
 
 ### Setup
 
