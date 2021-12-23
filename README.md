@@ -34,7 +34,7 @@ Run all your checks on each commit.
 
 ### pre-commit hook
 
-Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [lint-staged](https://github.com/okonet/lint-staged) to run commands only on changed files.
+Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [nano-staged](https://github.com/usmanyunusov/nano-staged) (lint-staged alternative) to run commands only on changed files.
 
 Ensure all files are formatted before they are committed and run linters on changed files.
 
