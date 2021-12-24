@@ -48,7 +48,7 @@
     "*.{js,ts,md,json,yaml}": "dprint fmt"
   },
   "tsup": {
-    "entryPoints": [
+    "entry": [
       "src/index.ts"
     ],
     "format": [
