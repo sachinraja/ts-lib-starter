@@ -11,7 +11,7 @@ specifiers:
   nano-staged: 0.5.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  tsup: 5.11.8
+  tsup: 5.11.7
   typescript: 4.5.4
   vite: 2.7.6
   vitest: 0.0.113
@@ -27,7 +27,7 @@ devDependencies:
   nano-staged: 0.5.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  tsup: 5.11.8_typescript@4.5.4
+  tsup: 5.11.7_typescript@4.5.4
   typescript: 4.5.4
   vite: 2.7.6
   vitest: 0.0.113_vite@2.7.6
@@ -2758,14 +2758,14 @@ packages:
       }
     dev: true
 
-  /tsup/5.11.8_typescript@4.5.4:
+  /tsup/5.11.7_typescript@4.5.4:
     resolution:
       {
-        integrity: sha512-MB348Kkip7NlHkISq/1YxNauj6qc8yiOL5mslUifLZtjBKEbSasaGdQRTRcHeM+cZ31sA+59XAnNyEIAjZajCQ==,
+        integrity: sha512-p3NXi/0TahcvlB6CHgsPQZ179Qx0YYPEn4GEkirDbUT3CifPHO6RtZMmPW2v2IXmWsFMg5ZSqzHRnCGtMnjDWw==,
       }
     hasBin: true
     peerDependencies:
-      typescript: ^4.5.4
+      typescript: ^4.2.3
     peerDependenciesMeta:
       typescript:
         optional: true
