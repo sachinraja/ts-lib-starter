@@ -32,11 +32,9 @@ Run dprint, TypeScript, and ESLint checks in parallel.
 
 Run all your checks on each commit.
 
-### pre-commit hook
+### [Husky](https://typicode.github.io/husky/#/)
 
-Uses [husky](https://typicode.github.io/husky/#/) to register a pre-commit hook and [nano-staged](https://github.com/usmanyunusov/nano-staged) (lint-staged alternative) to run commands only on changed files.
-
-Ensure all files are formatted before they are committed and run linters on changed files.
+Registers a pre-commit hook to ensure all files are formatted before they are committed.
 
 ### [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
 
