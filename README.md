@@ -1,6 +1,6 @@
 # ts-lib-starter
 
-Boilerplate for your next TypeScript library. Build with speed and efficiency.
+Boilerplate for your next TypeScript library. Build with speed.
 
 ## Features
 
