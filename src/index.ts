@@ -1,7 +1,7 @@
 import { message } from './constants.js'
 
 export const main = () => {
-  console.log(message)
+	console.log(message)
 }
 
 main()
