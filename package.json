@@ -1,8 +1,8 @@
 {
-	"name": "ts-lib-starter",
+	"name": "typelens",
 	"version": "0.0.0",
 	"type": "module",
-	"description": "boilerplate for your next TypeScript library",
+	"description": "gain insight into your types",
 	"main": "dist/index.cjs",
 	"exports": {
 		"./package.json": "./package.json",
